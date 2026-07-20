@@ -18,5 +18,3 @@ console.log(z);
  console.log(Array.isArray("rishav"));
  console.log(Array.from("rishav"));
  console.log(Array.from({name:"rishav"}));
- 
-
