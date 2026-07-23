@@ -10,3 +10,5 @@ Learning JavaScript from Chai aur Code.
 - Numbers & Maths
 - Comparison
 - Stack & Heap
+- arrays
+- json
