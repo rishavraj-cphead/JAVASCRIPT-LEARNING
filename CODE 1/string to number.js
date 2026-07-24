@@ -35,4 +35,4 @@
     console.log(gamecounter) // This will print the value of 'gamecounter' to the console, which is 101
     gamecounter-- // This decrements the value of 'gamecounter' by 1
     console.log(gamecounter) // This will print the value of 'gamecounter' to the console, which is 100
-    //tc39.es link to study the latest features of javascript
+    //tc39.es link to study the latest features of javascript 
