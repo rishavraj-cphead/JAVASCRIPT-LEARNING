@@ -49,4 +49,5 @@ switch (month) {
 // truthy values
 // "0",'false' " ".[]{},function(){}
 Object.keys().length==0
-//nullish operaTOR
+//nullish operaTOR ??
+// terniary ?
