@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            color: white;
+            background-color: #131;
+        }
+    </style>
+</head>
+<body>
+    <div class="lang">
+        <ul class="lang">
+            <li>
+                javascript
+            </li>
+
+        </ul>
+    </div>
+</body>
+<script>
+    function addlang(langname) {
+    const li = document.createElement('li');
+    li.textContent = langname;
+    document.querySelector('ul.lang').appendChild(li);
+}
+
+addlang("python");
+addlang("CSS");
+addlang("HTML");
+function adopt(langname)
+{
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langname));
+    document.querySelector('.lang').appendChild(li);
+}
+
+adopt("golang");
+const fisrtlang=document.querySelector("li:first-child")
+firstlang.outerHTML =`   <li>
+                golang
+            </li>`
+//remove
+const lastLang=document.querySelector("li:firs")
+</script>
+</html>
