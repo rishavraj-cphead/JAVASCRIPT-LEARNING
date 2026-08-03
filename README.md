@@ -12,3 +12,4 @@ Learning JavaScript from Chai aur Code.
 - Stack & Heap
 - arrays
 - json
+- Dom
