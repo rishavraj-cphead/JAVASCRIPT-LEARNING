@@ -8,6 +8,6 @@ buttons.forEach(function(button) {
     console.log(e)
     console.log(e.target)
     
-    
+     console.log(e)
 }
 });
