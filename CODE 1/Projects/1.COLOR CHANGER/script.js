@@ -5,10 +5,5 @@ buttons.forEach(function(button) {
     console.log(button);
     button.addEventListener('click', funtion(e)
 {
-    console.log(e)
-    console.log(e.target)
-    
-     console.log(e)
-     buttons.forEach
-}
+
 });
