@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>V8 Engine & API Notes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+            line-height: 1.6;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        code {
+            background: #eee;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background: #222;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        .important {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 5px solid #ffc107;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>JavaScript Notes</h1>
+
+    <h2>1. V8 Engine</h2>
+
+    <p>
+        V8 is a JavaScript engine developed by Google.
+        It is used in Google Chrome and Node.js to execute JavaScript.
+    </p>
+
+    <h3>JavaScript Execution</h3>
+
+    <pre>
+JavaScript Code
+       ↓
+     Parser
+       ↓
+      AST
+       ↓
+   Ignition
+       ↓
+    Bytecode
+       ↓
+   TurboFan
+       ↓
+Machine Code
+       ↓
+      CPU
+    </pre>
+
+    <h3>Important Components</h3>
+
+    <ul>
+        <li><b>Parser:</b> JavaScript code ko understand karta hai.</li>
+        <li><b>AST:</b> Code ka structured representation.</li>
+        <li><b>Ignition:</b> Bytecode generate aur execute karta hai.</li>
+        <li><b>TurboFan:</b> Frequently used code ko optimize karta hai.</li>
+        <li><b>Garbage Collector:</b> Unused memory ko clean karta hai.</li>
+    </ul>
+
+    <div class="important">
+        <b>Remember:</b>
+        JavaScript ek language hai, V8 ek JavaScript engine hai.
+    </div>
+
+
+    <h2>2. API</h2>
+
+    <p>
+        API ka full form <b>Application Programming Interface</b> hai.
+        API different software applications ko ek dusre se communicate karne mein help karta hai.
+    </p>
+
+    <h3>Example</h3>
+
+    <pre>
+Browser
+   ↓
+fetch()
+   ↓
+API Server
+   ↓
+Response
+   ↓
+JSON
+   ↓
+JavaScript
+    </pre>
+
+    <h3>Fetch API</h3>
+
+    <pre>
+fetch("https://example.com/data")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    });
+    </pre>
+
+
+    <h2>3. HTTP Headers</h2>
+
+    <p>
+        Headers request ya response ke saath additional information send karte hain.
+    </p>
+
+    <h3>Common Request Headers</h3>
+
+    <ul>
+        <li><code>Content-Type</code></li>
+        <li><code>Authorization</code></li>
+        <li><code>Accept</code></li>
+        <li><code>User-Agent</code></li>
+    </ul>
+
+    <h3>Example</h3>
+
+    <pre>
+fetch("https://example.com/api", {
+    method: "GET",
+
+    headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+    }
+});
+    </pre>
+
+
+    <h2>4. Open Headers</h2>
+
+    <p>
+        Agar tum API request ke headers dekhna chahte ho,
+        browser ke Developer Tools mein jaakar:
+    </p>
+
+    <ol>
+        <li>F12 press karo</li>
+        <li>Network tab open karo</li>
+        <li>API request select karo</li>
+        <li>Headers section open karo</li>
+        <li>Request Headers aur Response Headers dekho</li>
+    </ol>
+
+
+    <h2>5. V8 + API Connection</h2>
+
+    <pre>
+JavaScript
+    ↓
+V8 Engine
+    ↓
+fetch()
+    ↓
+Browser Web API
+    ↓
+Internet
+    ↓
+API Server
+    ↓
+Response
+    ↓
+JavaScript
+    </pre>
+
+    <div class="important">
+        <b>Important:</b>
+        fetch() V8 ka part nahi hai.
+        Browser fetch ko Web API ke through provide karta hai.
+    </div>
+
+</div>
+
+</body>
+<script>
+ const xhr= new XMLHttpRequest();
+ xhr.open('GET',)
+
+</script>
+</html>
