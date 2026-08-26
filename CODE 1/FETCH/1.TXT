@@ -1,0 +1,4 @@
+RESPonse fetch('something)
+it has two parts ]
+data and web browser
+eventually you have to the documentation
