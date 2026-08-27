@@ -10,3 +10,4 @@ function User(username,logincount,signedin)
     this.username=username
     this.signedin=signedin
 }
+
