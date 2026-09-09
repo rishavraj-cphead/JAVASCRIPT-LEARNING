@@ -102,6 +102,6 @@ async function consumepromisefive() {
 consumepromisefive()
 async function getallusers() {
    const response=await fetch('')
-    const data=esponse.json()
+    const data=response.json()
 }
 console.log(data);
